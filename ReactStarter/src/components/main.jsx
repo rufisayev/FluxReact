@@ -4,10 +4,10 @@ var TopicList = require('./topicList');
 
 
 module.exports = React.createClass({
+    //for routing it the previeous pages it must be under <Header/>( {this.props.children})
     render: function(){
         return <div>
             <Header/>
-            {this.props.children}
             {this.content()}
         </div>
     },

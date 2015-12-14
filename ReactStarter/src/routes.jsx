@@ -5,6 +5,7 @@ var HashHistory = require('react-router/lib/hashhistory');
 var Router = ReactRouter.Router;
 var Route = ReactRouter.Route;
 var Topic = require('./components/topic');
+var ImageDetail = require('./components/imageDetails');
 
 var Child1 = React.createClass({
     render: function () {
@@ -30,6 +31,7 @@ module.exports = (
                 <Route path="32" component={Child1}/>
             </Route>
             <Route path="topics/:id" component={Topic}/>
+            <Route path="images/:id" component={ImageDetail}/>
         </Route>
     </Router>
 )

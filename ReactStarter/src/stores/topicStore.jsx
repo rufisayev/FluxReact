@@ -6,7 +6,7 @@ module.exports = Reflux.createStore({
     //if any actions within Actions get called,you have a method here with same in Actions call the method
     listenables: [Actions],
     getTopics: function () {
-        return Api.get('topics/defaults').then(function (json) {
+         Api.get('topics/defaults').then(function (json) {
             this.topics = json.data;
             this.triggerChange();
         }.bind(this));
